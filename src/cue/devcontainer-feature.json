@@ -1,0 +1,26 @@
+{
+    "name": "The CUE Data Constraint Language",
+    "id": "cue-lang",
+    "version": "1.0.0",
+    "description": "CUE is an open-source data validation language and inference engine with its roots in logic programming.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter an CUE version."
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "brody715.vscode-cuelang"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils"
+    ]
+}

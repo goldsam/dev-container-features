@@ -1,0 +1,10 @@
+{
+    "latest_version": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "aws-sam=cli": {
+                "version": "latest"
+            }
+        }
+    }
+}

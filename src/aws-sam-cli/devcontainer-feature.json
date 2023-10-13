@@ -1,0 +1,27 @@
+{
+    "name": "AWS SAM CLI",
+    "id": "aws-sam-cli",
+    "version": "1.0.3",
+    "documentationURL": "https://github.com/goldsam/dev-container-features/tree/main/src/aws-sam-cli",
+    "description": "Installs the AWS SAM CLI along with needed dependencies.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter an AWS SAM CLI version."
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ThreadHeap.serverless-ide-vscode"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/aws-cli"
+    ]
+}

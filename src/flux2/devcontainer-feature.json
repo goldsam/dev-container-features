@@ -1,0 +1,27 @@
+{
+    "name": "Flux 2",
+    "id": "flux2",
+    "version": "1.0.0",
+    "description": "Flux is a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories and OCI artifacts), and automating updates to configuration when there is new code to deploy.",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter an Flux 2 version."
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Weaveworks.vscode-gitops-tools"
+            ]
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers/features/common-utils",
+        "ghcr.io/devcontainers/features/kubectl-helm-minikube"
+    ]
+}
