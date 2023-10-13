@@ -2,7 +2,7 @@
     "latest_version": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "aws-sam=cli": {
+            "flux2": {
                 "version": "latest"
             }
         }
