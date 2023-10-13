@@ -4,7 +4,7 @@
 # includes the 'aws-sam-cli' Feature with no options.
 #
 
-#!/bin/bash
+#!/usr/bin/env bash
 
 # This test file will be executed against one of the scenarios devcontainer.json test that
 # includes the 'aws-sam-cli' feature with "version": "latest" option.
