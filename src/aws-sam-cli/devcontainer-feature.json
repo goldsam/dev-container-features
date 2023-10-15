@@ -1,7 +1,7 @@
 {
     "name": "AWS SAM CLI",
     "id": "aws-sam-cli",
-    "version": "1.0.3",
+    "version": "1.0.0",
     "documentationURL": "https://github.com/goldsam/dev-container-features/tree/main/src/aws-sam-cli",
     "description": "Installs the AWS SAM CLI along with needed dependencies.",
     "options": {
