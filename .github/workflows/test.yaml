@@ -13,7 +13,7 @@ jobs:
       matrix:
         features:
           - aws-sam-cli
-          - cue
+          - cue-lang
           - flux2
         baseImage:
           # - debian:latest
@@ -34,7 +34,7 @@ jobs:
       matrix:
         features:
           - aws-sam-cli
-          - cue
+          - cue-lang
           - flux2
     steps:
       - uses: actions/checkout@v3

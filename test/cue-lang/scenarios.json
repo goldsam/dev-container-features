@@ -2,7 +2,7 @@
     "latest_version": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "cue": {
+            "cue-lang": {
                 "version": "latest"
             }
         }
