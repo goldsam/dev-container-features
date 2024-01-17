@@ -101,13 +101,13 @@ else
 
     ARCHIVE_FILE="cue_v${CUE_VERSION}_linux_${architecture}.tar.gz"
     curl -fsSL -o "${ARCHIVE_FILE}" "https://github.com/cue-lang/cue/releases/download/v${CUE_VERSION}/${ARCHIVE_FILE}"
-    curl -fsSL -o checksums.txt "https://github.com/cue-lang/cue/releases/download/v0.6.0/checksums.txt"
+    curl -fsSL -o checksums.txt "https://github.com/cue-lang/cue/releases/download/v${CUE_VERSION}/checksums.txt"
 
     calculated_checksum=$(sha256sum "${ARCHIVE_FILE}" | awk '{print $1}')
     expected_checksum=$(grep "${ARCHIVE_FILE}" "checksums.txt" | awk '{print $1}')
 
     if [ "$calculated_checksum" != "$expected_checksum" ]; then
-        echo -e "Invalid CUE archive checksom." >&2
+        echo -e "Invalid CUE archive checksum." >&2
         exit 1
     fi
 
