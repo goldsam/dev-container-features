@@ -1,14 +1,7 @@
-# Some Additional Development Container Features
+# Sam's Additional Development Container Features
 
-This repo provides some additional development container features that you may find useful.
+This repo provides some additional development container features:
 
-Missing a CLI or language in your otherwise perfect container image? Add the relevant Feature to the features property of a devcontainer.json. A tool supporting the dev container specification is required to build a development container.
-
-## Repo and Feature Structure
-
-Similar to the [`devcontainers/features`](https://github.com/devcontainers/features) repo, this repository has a `src` folder.  Each Feature has its own sub-folder, containing at least a `devcontainer-feature.json` and an entrypoint script `install.sh`. 
-
-### Options
-
-All available options for each Feature are declared in its associated `devcontainer-feature.json`. For additional details, see the [devcontainer Feature json properties reference](https://containers.dev/implementors/features/#devcontainer-feature-json-properties).
-
+- [`aws-sam-cli`](./src/aws-sam-cli/) - The [AWS SAM CLI](https://github.com/aws/aws-sam-cli) - a tool for developing and deploying serverless applications.
+- [`cue-lang`](./src/cue-lang/) - CLI for The [CUE Data Constraint Language](https://github.com/cue-lang/cue) - an open source data constraint language which aims to simplify tasks involving defining and using data.
+- [`flux2`](./src/flux2/) - CLI for [Flux](https://github.com/fluxcd/flux2) - a tool for keeping Kubernetes clusters in sync with sources of configuration (like Git repositories and OCI artifacts), and automating updates to configuration when there is new code to deploy.
