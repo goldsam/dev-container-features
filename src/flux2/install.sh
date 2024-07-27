@@ -15,7 +15,7 @@ else
   echo "Installing flux...'"
 
   # The official install script will honor FLUX_VERSION
-  curl -s https://fluxcd.io/install.sh | bash
+  curl -s https://fluxcd.io/install.sh | FLUX_VERSION=$FLUX_VERSION bash
 fi
 
 set +e
